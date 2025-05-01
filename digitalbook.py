@@ -1,6 +1,6 @@
-from book import book
+from book import Book
 
-class DigitalBook(book): #this is the child class of book
+class DigitalBook(Book): #this is the child class of book
     def __init__(self, title, author, year, file_size): #this is the constructor method
         super().__init__(title, author, year) #we use super to ingerit attributes from the book class
         self.file_size = file_size
